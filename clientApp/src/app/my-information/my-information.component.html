@@ -29,7 +29,12 @@
                             <p>Education & Occupation Info</p>
                             <div class="row">
                                 <mat-select placeholder="Education" class="col-md-12">
-                                    <mat-option value="">Bachelor's</mat-option>
+                                        <mat-option value="educationLevel.value" *ngFor="let educationLevel of educationLevels">{{educationLevel.name}}</mat-option>
+                                </mat-select>
+                            </div>
+                            <div class="row">
+                                <mat-select placeholder="Workclass" class="col-md-12">
+                                    <mat-option value=""></mat-option>
                                 </mat-select>
                             </div>
                             <div class="row">
