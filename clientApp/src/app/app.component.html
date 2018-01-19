@@ -1,4 +1,7 @@
-<div class="wrapper ">
+<div class="login-container" *ngIf="!userLoggedIn">
+    <login></login>
+</div>
+<div class="wrapper " *ngIf="userLoggedIn">
   <div class="sidebar">
     <nav class="">
       <div class="logo">
@@ -16,13 +19,13 @@
           <a routerLink="/home"><i class="material-icons">home</i><p>Dashboard</p></a>
         </li>
         <li>
-          <a href="#">
+          <a href="/settings">
             <i class="material-icons">person</i>
             <p>Profile</p>
           </a>
         </li>
         <li>
-            <a routerLink="/myInformation"><i class="material-icons">settings</i><p>Settings</p></a>
+            <a routerLink="/settings"><i class="material-icons">settings</i><p>Settings</p></a>
         </li>
       </ul>
     </nav>
@@ -33,9 +36,10 @@
       <my-header></my-header>
     </header>
     <main>
-      <login *ngIf=""></login>
-      <my-information></my-information>
-      <home></home>
+        <router-outlet></router-outlet>
+      
+      <!--<my-information></my-information>
+      <home></home>-->
     </main>
     <footer></footer>
   </div>

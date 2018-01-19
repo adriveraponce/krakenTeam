@@ -11,4 +11,12 @@ import { NgIf } from '@angular/common';
 export class AppComponent {
   title = 'app';
   userLoggedIn: boolean = true;
+
+  LogIn() {
+    this.userLoggedIn = true;
+  }
+
+  LogOut() {
+    this.userLoggedIn = false;
+  }
 }

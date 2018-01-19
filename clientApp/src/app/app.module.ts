@@ -45,7 +45,8 @@ const appRoutes : Routes = [
     MatInputModule,
     Ng4TwitterTimelineModule,
     MatRadioModule,
-    MatDividerModule
+    MatDividerModule,
+    RouterModule.forRoot(appRoutes)
   ],
   exports: [
     RouterModule
