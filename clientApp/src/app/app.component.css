@@ -1,25 +1,152 @@
-.wrapper {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 20% 80%;
-    grid-template-rows:  auto;
+.wrapper::after {
+    display: table;
+    clear: both;
+    content: " ";
 }
 
-header {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    height: 50px;
-    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+.sidebar, .content, .sidebar > nav > img {
+    -webkit-transition-property: top, bottom, width;
+    transition-property: top, bottom, width;
+    -webkit-transition-duration: .2s, .2s, .35s;
+    transition-duration: .2s, .2s, .35s;
+    -webkit-transition-timing-function: linear, linear, ease;
+    transition-timing-function: linear, linear, ease;
+    -webkit-overflow-scrolling: touch;
 }
 
-nav {
-    grid-column: 1 ;
+.content {
+    position: relative;
+    float: right;
+    width: calc(100% - 80px);
+    max-width: 100%;
+    -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -o-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -ms-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
 }
 
-main {
-    grid-column: 2;
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 80px;
+    padding: 0;
+    background: #EEEEEE;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42),
+                0 4px 25px 0px rgba(0, 0, 0, 0.12),
+                0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    grid-column: 1 / 3;
+.sidebar ul li a p, .sidebar .user p , .sidebar .logo p{
+    -webkit-transform: translate3d(-25px, 0, 0);
+    -moz-transform: translate3d(-25px, 0, 0);
+    -o-transform: translate3d(-25px, 0, 0);
+    -ms-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+    opacity: 0;
+}
+
+.sidebar:hover  ul li a p, .sidebar .user p, .sidebar .logo p {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar ul {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li:hover a{
+    background-color: rgba(182, 179, 179, 0.842);
+}
+
+.sidebar ul li a {
+    display: block;
+    line-height: 23px;
+    margin: 0 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 15px 10px;
+}
+
+.sidebar ul li a {
+    background-color: rgba(200, 200, 200, 0.658);
+}
+
+.sidebar ul li.active a {
+    background-color: #c6ff00;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(94, 233, 30, 0.4);
+    color: #000000;
+}
+
+.sidebar ul li a i, .sidebar ul li a p , .sidebar .logo p{
+    display: inline-block;
+    line-height: 23px;
+    vertical-align: top;
+}
+
+.sidebar ul li a i {
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+}
+.sidebar ul li a p , .sidebar .logo p{
+    margin: 0;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    height: auto;
+    white-space: nowrap;
+}
+
+.sidebar ul li a p, .sidebar .user p, .sidebar .logo p {
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+.sidebar .logo .photo{
+    margin: 15px;
+}
+
+.sidebar .logo .photo img {
+    
+}
+
+.sidebar nav {
+    padding: 0;
+}
+
+nav .user {
+    margin: 10px 0 15px 15px;
+}
+
+nav .user p {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+nav .user img {
+    border-radius: 50%;
+    border: solid 1px #FFF;
+    float: left;
 }

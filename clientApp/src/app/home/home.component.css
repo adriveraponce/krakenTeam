@@ -1,0 +1,27 @@
+.draggy .circle {
+    -webkit-transform: translate3d(34.4em,0,0);
+    transform: translate3d(34.4em,0,0);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.draggy .circle:hover{
+    cursor: pointer;
+}
+
+#draggyItem1 {
+    background: pink;
+}
+
+#draggyItem1 {
+    background: greenyellow;
+}
+
+#draggyItem1 {
+    background: purple;
+}
+
+#draggyItem1 {
+    background: blue;
+}

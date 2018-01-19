@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'flexboxgrid/css/flexboxgrid.min.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import 'material-design-icons/iconfont/material-icons.css';
 
 /*general styling*/
 html, body {
@@ -23,8 +24,12 @@ h1, h2, h3, h4, p, span, ul, li {
     font-family: 'Roboto', sans-serif;
 }
 
+ul, ul li {
+    list-style: none;
+}
+
 header {
-    background: #18FFFF;
+    
 }
 
 footer {

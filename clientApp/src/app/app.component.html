@@ -1,18 +1,33 @@
-<div class="wrapper">
-  <header>
-    <!--*ngIf user is loggedIn-->
-    <my-header></my-header>
-</header>
-<!--
-  temporarily disabled since not sure about the value of this
-  <nav>
-    <mat-sidenav-container class="sidenav-container">
-      <mat-sidenav mode="side" opened="false">Sidenav content</mat-sidenav>
-      <mat-sidenav-content>Main content</mat-sidenav-content>
-    </mat-sidenav-container>
-  </nav>-->
-<main>
-  <login></login>
-</main>
-<footer></footer>
+<div class="wrapper ">
+  <div class="sidebar col-md-2">
+    <nav class="">
+      <div class="logo">
+        <div class="photo">
+            <img src="assets/img/logo-purple.png" alt="" width="50px" height="50px">
+        </div>
+        <div class="info">
+            
+        </div>
+      </div>
+      <ul>
+        <li class="active">
+          <a href=""><i class="material-icons">home</i><p>Dashboard</p></a>
+        </li>
+        <li>
+            <a href=""><i class="material-icons">settings</i><p>Settings</p></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content col-md-10">
+    <header>
+      <!--*ngIf user is loggedIn-->
+      <my-header></my-header>
+    </header>
+    <main>
+      <login></login>
+      <home></home>
+    </main>
+    <footer></footer>
+  </div>
 </div>

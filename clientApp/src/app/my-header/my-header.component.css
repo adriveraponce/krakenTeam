@@ -1,0 +1,44 @@
+p {
+    color: rgb(85, 85, 85);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+
+nav {
+    padding: 0;
+}
+
+.navbar-nav > li {
+    float: left;
+    margin: 0 5px;
+}
+
+.navbar-header {
+    float: left;
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+
+.navbar-collapse ul {
+    margin: 0;
+}
+
+.navbar .notifications {
+    position: absolute;
+    top: 5px;
+    right: 56px;
+    font-size: 9px;
+    background: #f44336;
+    color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 19px;
+    vertical-align: middle;
+    display: block;
+}

@@ -6,13 +6,15 @@ import {MatButtonModule, MatCheckboxModule,  MatSidenavModule, MatMenuModule } f
 import { AppComponent } from './app.component';
 import { MyHeaderComponent } from './my-header/my-header.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MyHeaderComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
