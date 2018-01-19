@@ -1,3 +1,10 @@
+#logo-svg {
+    height: 50px;
+    background: url(/assets/img/Oltiva_Logo_1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .wrapper::after {
     display: table;
     clear: both;
@@ -61,7 +68,7 @@
 }
 
 .sidebar:hover {
-    width: 260px;
+    width: 280px;
 }
 
 .sidebar ul {
@@ -131,10 +138,6 @@
 
 .sidebar .logo .photo{
     margin: 15px;
-}
-
-.sidebar .logo .photo img {
-    
 }
 
 .sidebar nav {

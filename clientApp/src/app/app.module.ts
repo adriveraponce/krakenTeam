@@ -5,8 +5,11 @@ import {MatButtonModule, MatCheckboxModule,
         MatSidenavModule, MatMenuModule,
         MatFormFieldModule, MatOptionModule,
         MatSelectModule, MatCardModule, 
-        MatFormFieldControl, MatInputModule, MatRadioModule } from '@angular/material';
+        MatFormFieldControl, MatInputModule, 
+        MatRadioModule, MatDividerModule } from '@angular/material';
 import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
+
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MyHeaderComponent } from './my-header/my-header.component';
@@ -14,6 +17,11 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { MyInformationComponent } from './my-information/my-information.component';
 
+const appRoutes : Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'settings', component: MyInformationComponent },
+  { path: 'login', component: LoginComponent }
+]
 
 @NgModule({
   declarations: [
@@ -36,9 +44,17 @@ import { MyInformationComponent } from './my-information/my-information.componen
     MatCardModule, 
     MatInputModule,
     Ng4TwitterTimelineModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDividerModule
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+
+export class AppModule {
+  
+}
