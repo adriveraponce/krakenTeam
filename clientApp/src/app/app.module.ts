@@ -5,7 +5,7 @@ import {MatButtonModule, MatCheckboxModule,
         MatSidenavModule, MatMenuModule,
         MatFormFieldModule, MatOptionModule,
         MatSelectModule, MatCardModule, 
-        MatFormFieldControl, MatInputModule } from '@angular/material';
+        MatFormFieldControl, MatInputModule, MatRadioModule } from '@angular/material';
 import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
 
 import { AppComponent } from './app.component';
@@ -35,7 +35,8 @@ import { MyInformationComponent } from './my-information/my-information.componen
     MatSelectModule,
     MatCardModule, 
     MatInputModule,
-    Ng4TwitterTimelineModule
+    Ng4TwitterTimelineModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
