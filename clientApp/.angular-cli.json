@@ -22,7 +22,6 @@
         "styles.css"
       ],
       "scripts": [
-        "node_modules/@shopify/draggable/lib/draggable.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

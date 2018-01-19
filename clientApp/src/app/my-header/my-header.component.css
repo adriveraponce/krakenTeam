@@ -1,8 +1,20 @@
+.my-header {
+    height: 60px;
+    margin: -10px;
+    background: #E0E0E0; /*#BDBDBD*/
+    padding: 10px;
+}
+
 p {
-    color: rgb(85, 85, 85);
+    color: #424242; /* rgb(85, 85, 85); or #fafafa;*/
     font-size: 18px;
     font-weight: 300;
     margin: 0;
+}
+
+p, p span, p i {
+    line-height: 50px;
+    vertical-align: top;
 }
 
 nav {
@@ -12,6 +24,14 @@ nav {
 .navbar-nav > li {
     float: left;
     margin: 0 5px;
+}
+
+.navbar-nav > li > a {
+    color: #424242; /*#fafafa*/
+}
+
+.navbar-nav > li > a > i {
+    line-height: 50px; 
 }
 
 .navbar-header {
@@ -29,8 +49,8 @@ nav {
 
 .navbar .notifications {
     position: absolute;
-    top: 5px;
-    right: 56px;
+    top: 18px;
+    right: 42px;
     font-size: 9px;
     background: #f44336;
     color: #FFFFFF;

@@ -3,7 +3,8 @@
     <nav class="">
       <div class="logo">
         <div class="photo">
-            <img src="assets/img/logo-purple.png" alt="" width="50px" height="50px">
+          <img src="assets/img/Oltiva_Logo_.svg" alt="" width="50px" height="50px">
+          <!--<img src="assets/img/logo-purple.png" alt="" width="50px" height="50px">-->
         </div>
         <div class="info">
             
@@ -11,10 +12,10 @@
       </div>
       <ul>
         <li class="active">
-          <a href=""><i class="material-icons">home</i><p>Dashboard</p></a>
+          <a routerLink="/home"><i class="material-icons">home</i><p>Dashboard</p></a>
         </li>
         <li>
-            <a href=""><i class="material-icons">settings</i><p>Settings</p></a>
+            <a routerLink="/myInformation"><i class="material-icons">settings</i><p>Settings</p></a>
         </li>
       </ul>
     </nav>
@@ -25,7 +26,8 @@
       <my-header></my-header>
     </header>
     <main>
-      <login></login>
+      <login *ngIf=></login>
+      <my-information></my-information>
       <home></home>
     </main>
     <footer></footer>

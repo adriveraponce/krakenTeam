@@ -1,22 +1,26 @@
-<div class="draggy">
-  <div id="draggyItem1" class="circle"></div>
-</div>
-
-<div class="JellyInterior">
-  <div class="FaceWrapper">
-    <div class="FacePop">
-      <div class="SvgContainer Face Face--typeTop">
-
+<section class="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row margin-bottom-only">
+                  <div class="col-md-12 no-padding">
+                      <mat-card class="card"></mat-card>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 no-padding padding-right">
+                    <mat-card class="card"></mat-card>
+                  </div>
+                  <div class="col-md-6 no-padding padding-left">
+                    <mat-card class="card"></mat-card>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <mat-card class="card">
+                      <ng4-twitter-timeline [dataSrc]="{sourceType: 'profile',screenName: 'AccentureTech'}" [opts]="{tweetLimit: 2}"></ng4-twitter-timeline>
+                  </mat-card>
+              </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="SvgContainer Outline Outline--typeCube">
-    <svg class="Svg CubeOutline CubeOutline--typeLeft" viewBox="0 0 180 207">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#SVGCubeOutlineLeft"></use>
-    </svg> <svg class="Svg CubeOutline CubeOutline--typeRight" viewBox="0 0 180 207">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#SVGCubeOutlineRight">
-      </use></svg> <svg class="Svg CubeOutline CubeOutline--typeTop" viewBox="0 0 180 207">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#SVGCubeOutlineTop"></use>
-      </svg>
-    </div>
-  </div>
+</section>

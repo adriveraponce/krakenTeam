@@ -1,9 +1,19 @@
+.home {
+    margin: 10px 0;
+}
+
+
+/****temporarily disabled while implementing draggble UI*****/
+/*
+
 .draggy .circle {
     -webkit-transform: translate3d(34.4em,0,0);
     transform: translate3d(34.4em,0,0);
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    position: absolute;
+    top: 0;
 }
 
 .draggy .circle:hover{
@@ -14,14 +24,20 @@
     background: pink;
 }
 
-#draggyItem1 {
+#draggyItem2 {
     background: greenyellow;
 }
 
-#draggyItem1 {
+#draggyItem3 {
     background: purple;
 }
 
-#draggyItem1 {
-    background: blue;
+#draggyItem4 {
+    background: cyan;
 }
+
+#draggyItem5 {
+    background: peru;
+}
+
+*/

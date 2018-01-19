@@ -28,10 +28,34 @@ ul, ul li {
     list-style: none;
 }
 
-header {
-    
+main {
+    clear: both;
 }
 
-footer {
-    /*background: #424242;*/
+.card > * > * {
+    width: 100%;
+}
+
+.primary-btn {
+    background:#c6ff00;
+}
+
+.row {
+    margin: 15px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.padding-left {
+    padding-left: 15px;
+}
+
+.padding-right {
+    padding-right: 15px;
+}
+
+.row.margin-bottom-only {
+    margin-top: 0;
 }
