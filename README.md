@@ -11,6 +11,14 @@ afro-american.
 Now how does it work? 
 
 ***
+We worked with tenssorflow to build or model and we deploy it in the machine learning engine of google cloud
+we reached an acurracy of 82.48% with and average loss of .27 using the adult cesus dataset provided.
+
+in tensorboard ill show you our arquitecture.
+
+We used a combination of deep neural network and lineal regresion that are data clasiffier altgorithms
+
+***
 
 This is the form where Ana will provide her information.
 
