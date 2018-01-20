@@ -20,6 +20,10 @@ main, header, footer, nav {
     padding: 10px;
 }
 
+button {
+    width: 100%;
+}
+
 h1, h2, h3, h4, p, span, ul, li {
     font-family: 'Roboto', sans-serif;
 }
@@ -38,6 +42,11 @@ main {
 
 .primary-btn {
     background:#c6ff00;
+}
+
+.secondary-btn {
+    background: #2196F3;
+    color: #fafafa;
 }
 
 .row {

@@ -2,69 +2,116 @@
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-12">
-                <h2>Settings</h2>
+                <div class="col-md-8 col-md-offset-2">
+                        <h2>Settings</h2>
+                </div>
             </div>
-            <div class="col-md-4">
-                    <mat-card class="card">
-                            <p>Personal Info</p>
-                            <div class="row">
-                                <mat-form-field>
-                                    <input matInput placeholder="First Name">
-                                    </mat-form-field>
-                                    <mat-form-field>
-                                        <input matInput placeholder="Last Name">
-                                    </mat-form-field>
-                                </div>
+        </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-8 col-md-offset-2">
+                            <mat-card class="card">
+                                    <p>Personal Info</p>
+                                    <div class="row">
+                                        
+                                            <mat-radio-group>
+                                                <span>Genre:</span>
+                                                <mat-radio-button value="F">Female</mat-radio-button>
+                                                <mat-radio-button value="M">Male</mat-radio-button>
+                                            </mat-radio-group>
+                                         
+                                        </div>
+                                    <div class="row">
+                                        <mat-form-field>
+                                            <input matInput placeholder="First Name">
+                                            </mat-form-field>
+                                            <mat-form-field>
+                                                <input matInput placeholder="Last Name">
+                                            </mat-form-field>
+                                        </div>
+                                        
+                                    </mat-card>
+                    </div>
+                </div>
+            </div>
+                
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-8 col-md-offset-2">
+                        <mat-card class="card">
+                                <p>Sentimental Information</p>
                                 <div class="row">
-                                    <mat-radio-group>
-                                        <mat-radio-button value="F">Female</mat-radio-button>
-                                        <mat-radio-button value="M">Male</mat-radio-button>
-                                    </mat-radio-group>
-                                 
+                                    <mat-select placeholder="Marital Status" class="col-md-12">
+                                            <mat-option value="maritalStatus.value" *ngFor="let maritalStatus of maritalStatuses">{{maritalStatus.name}}</mat-option>
+                                    </mat-select>
                                 </div>
                             </mat-card>
+                </div>
             </div>
-            <div class="col-md-4">
-                    <mat-card class="card">
-                            <p>Education & Occupation Info</p>
-                            <div class="row">
-                                <mat-select placeholder="Education" class="col-md-12">
-                                        <mat-option value="educationLevel.value" *ngFor="let educationLevel of educationLevels">{{educationLevel.name}}</mat-option>
-                                </mat-select>
-                            </div>
-                            <div class="row">
-                                <mat-select placeholder="Workclass" class="col-md-12">
-                                    <mat-option value=""></mat-option>
-                                </mat-select>
-                            </div>
-                            <div class="row">
-                                <mat-select placeholder="Occupation" class="col-md-12">
-                                    <mat-option value="">Tech Support</mat-option>
-                                </mat-select>
-                            </div>
-                        </mat-card> 
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="col-md-8 col-md-offset-2">
+                            <mat-card class="card">
+                                    <p>Education & Occupation Info</p>
+                                    <div class="row">
+                                        <mat-select placeholder="Education" class="col-md-12">
+                                                <mat-option value="educationLevel.value" *ngFor="let educationLevel of educationLevels">{{educationLevel.name}}</mat-option>
+                                        </mat-select>
+                                    </div>
+                                    <div class="row">
+                                        <mat-select placeholder="Workclass" class="col-md-12">
+                                                <mat-option value="workclass.value" *ngFor="let workclasse of workclasses">{{workclasse.name}}</mat-option>
+                                        </mat-select>
+                                    </div>
+                                    <div class="row">
+                                        <mat-select placeholder="Occupation" class="col-md-12">
+                                                <mat-option value="occupation.value" *ngFor="let occupation of occupations">{{occupation.name}}</mat-option>
+                                        </mat-select>
+                                    </div>
+                                </mat-card> 
+                    </div>
             </div>
-            <div class="col-md-4">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                    <div class="col-md-8 col-md-offset-2">
+                            <mat-card class="card">
+                                    <p>Origin Info</p>
+                                    <mat-select placeholder="Race" class="col-md-12">
+                                            <mat-option value="race.value" *ngFor="let race of races">{{race.name}}</mat-option>
+                                          </mat-select>
+                                    <mat-select placeholder="Select your native country" class="col-md-12">
+                                            <mat-option value="country.value" *ngFor="let country of countries">{{country.name}}</mat-option>
+                                          </mat-select>
+                            </mat-card>
+                        </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-8 col-md-offset-2">
                     <mat-card class="card">
-                            <p>Origin Info</p>
-                            <mat-select placeholder="Race" class="col-md-12">
-                                    <mat-option value="">Latin</mat-option>
-                                  </mat-select>
-                            <mat-select placeholder="Select your native country" class="col-md-12">
-                                    <mat-option value="Mexico">Mexico</mat-option>
-                                    <mat-option value="United States">United States</mat-option>
-                                    <mat-option value="Cambodia">Cambodia</mat-option>
-                                    <mat-option value="England">England</mat-option>
-                                    <mat-option value="Puerto Rico">Puerto Rico</mat-option>
-                                    <mat-option value="Canada">Canada</mat-option>
-                                    <mat-option value="India">India</mat-option>
-                                    <mat-option value="Japan">Japan</mat-option>
-                                    <mat-option value="France">France</mat-option>
-                                    <mat-option value="Poland">Poland</mat-option>
-                                    <mat-option value="Ecuador">Ecuador</mat-option>
-                                  </mat-select>
+                        <span class="col-md-6">
+                            Upload Account Balance:
+                        </span>
+                        <button mat-button class="primary-btn col-md-6">Upload</button>
                     </mat-card>
-                </div>     
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-8 col-md-offset-2">
+                        <mat-card class="card">
+                                <div class="col-md-6 col-md-offset-3">
+                                        <button mat-button class="secondary-btn">Save</button>
+                                </div>    
+                            </mat-card>
+                </div>
+                
+            </div>
         </div>
     </div>
 </div>
